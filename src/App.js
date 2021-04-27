@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from './components/Navbar';
 import './App.css';
+import Home from './components/pages/Home';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Members from './components/pages/Members';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/members' component={Members} />
+          <Route path='/EDD' component={() => { window.location = 'https://drive.google.com/file/d/11dfVzuibaLn6WeCShi82CLhjLF-K-bih/view?usp=sharing'; return null;} }/>
+          <Route path='/demo' component={() => { window.location = 'https://drive.google.com/file/d/14YV4JY7xEUN8p2spCImDiyFUkX1c8709/view?usp=sharing'; return null;} }/>
+          <Route path='/TD' component={() => { window.location = 'https://drive.google.com/file/d/1OLEjKKMgscySXR1Gt-6ewYreZvBAd9gb/view?usp=sharing'; return null;} }/>
+          <Route path='/harry' component={() => { window.location = 'https://www.linkedin.com/in/harry-zhou-408374125/'; return null;} }/>
+          <Route path='/chris' component={() => { window.location = 'https://www.linkedin.com/in/christopher-williams-299904100/'; return null;} }/>
+          <Route path='/zack' component={() => { window.location = 'https://www.linkedin.com/in/zachary-houghton-10a187174/'; return null;} }/>
+          <Route path='/ling' component={() => { window.location = 'https://www.linkedin.com/in/liling810/'; return null;} }/>
+          <Route path='/nghi' component={() => { window.location = 'https://www.linkedin.com/in/ethan-le-ba8482123/'; return null;} }/>
+          <Route path='/nath' component={() => { window.location = 'https://www.linkedin.com/in/nathanshangkala/'; return null;} }/>
+          <Route path='/kaushik' component={() => { window.location = 'https://www.linkedin.com/in/kaushik-vishwanath/'; return null;} }/>
+          <Route path='/github' component={() => { window.location = 'https://github.com/ViZDoomBot/stable-baselines-agent'; return null;} }/>
+        
+        </Switch>
+      </Router>
+      
+    </>
   );
 }
 
