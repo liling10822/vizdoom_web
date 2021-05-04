@@ -17,13 +17,13 @@
 }
 
 .members {
-  background-image: url('./components/images/img-home.jpg');
+  background-image: url('./components/images/member.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
   width: 100%;
-  color: #fff;
+  color:#fff;
   font-size: 100px;
 }
 

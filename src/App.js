@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Members from './components/pages/Members';
+import Member from './components/pages/Member';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/members' component={Members} />
+          <Route path='/members' component={Member} />
           <Route path='/EDD' component={() => { window.location = 'https://drive.google.com/file/d/11dfVzuibaLn6WeCShi82CLhjLF-K-bih/view?usp=sharing'; return null;} }/>
           <Route path='/demo' component={() => { window.location = 'https://drive.google.com/file/d/1U6FwbblKZm2_XxCVVH59AsPC4qASDSVO/view?usp=sharing'; return null;} }/>
           <Route path='/TD' component={() => { window.location = 'https://drive.google.com/file/d/1OLEjKKMgscySXR1Gt-6ewYreZvBAd9gb/view?usp=sharing'; return null;} }/>
