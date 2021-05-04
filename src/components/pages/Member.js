@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default function Member() {
   return (
     <>
-    <h1 className='members' color = 'white'></h1>;
+    <div className='members'></div>;
       <Members />
       <section class='social-media'>
         <div class='social-media-wrap'>
