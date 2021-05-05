@@ -13,9 +13,9 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/members' component={Member} />
-          <Route path='/EDD' component={() => { window.location = 'https://drive.google.com/file/d/11dfVzuibaLn6WeCShi82CLhjLF-K-bih/view?usp=sharing'; return null;} }/>
+          <Route path='/EDD' component={() => { window.location = 'https://drive.google.com/file/d/1FnoS75wGjpmN-BD4MXKzMir52gCQuoUD/view?usp=sharing'; return null;} }/>
           <Route path='/demo' component={() => { window.location = 'https://drive.google.com/file/d/1U6FwbblKZm2_XxCVVH59AsPC4qASDSVO/view?usp=sharing'; return null;} }/>
-          <Route path='/TD' component={() => { window.location = 'https://drive.google.com/file/d/1OLEjKKMgscySXR1Gt-6ewYreZvBAd9gb/view?usp=sharing'; return null;} }/>
+          <Route path='/TD' component={() => { window.location = 'https://drive.google.com/file/d/1BUMIyzzBqS-pyWbEEHBY0JYAshU6HgZv/view?usp=sharing'; return null;} }/>
           <Route path='/harry' component={() => { window.location = 'https://www.linkedin.com/in/harry-zhou-408374125/'; return null;} }/>
           <Route path='/chris' component={() => { window.location = 'https://www.linkedin.com/in/christopher-williams-299904100/'; return null;} }/>
           <Route path='/zack' component={() => { window.location = 'https://www.linkedin.com/in/zachary-houghton-10a187174/'; return null;} }/>
